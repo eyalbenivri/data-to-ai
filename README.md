@@ -13,7 +13,7 @@ using multimodal GenAI capabilities of Google Cloud.
 * Full text search on the automatically generated description of the images
 * Vector search for images with similar attributes
 
-## Use Case
+## Use Cases
 
 Imagine a large city transportation agency which is trying to improve its passenger satisfaction. The
 agency would like to be notified if there are issues with cleanliness and safety of the
@@ -23,7 +23,15 @@ also provides a customer portal to allow uploading bus stop pictures by passenge
 
 The images should be automatically analyzed and if the bus stop is found to be dirty - an incident
 is automatically created. The incident is considered to be resolved if a new image shows the bus stop
-to be in acceptable condition.
+to be in acceptable condition. 
+
+The internal users of our transportation agency also needs to perform search and monitoring operations over the physical assets. We will use GenAI capabilities to enable semantic search over the images, helping the system users to discover the information they need using natural language.
+
+In our second use case, we want to make our dataset ready for search and analysis. The transportation agency commercial department want to verify that ads being paid for by our commercial customers are being displayed and that the condition of those bus stops aren't in a pressing need for care. For that, we will enrich our dataset with human and machine friendly information to make it more usable for those queries, where we can find bus stops with specific ads, and understand how many people are standing in those bus stops (impressions of ads) and generate reports for the condition of those bus stops.
+
+Our third use case, we are asked to generate estimations of number of passengers in our bus stops, in order to be better prepared for any large spikes or save costs when we predict lower number of passengers. We will use our input data to project estimations about expected number of riders, using weather data to estimate how number of passengers might change, given weather predictions. 
+
+
 
 ![Incident Detection & Resolution in action](https://services.google.com/fh/files/misc/bus-stops-reel.gif)
 
