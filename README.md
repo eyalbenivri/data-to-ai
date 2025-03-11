@@ -58,14 +58,11 @@ buckets. This is done to be able to run the implementations independently of eac
 
 The following notebooks are provided:
 
-1. [Multimodal Analysis and Search of Bus Stops](./notebooks/multimodal_analysis_search.ipynb)
-notebook is a step-by-step walkthrough of the data processing workflow. This notebook is
-self-sufficient and can be run independently without needing any other components of this repository.
-2. [Evaluating Multimodal Image Search](./notebooks/multimodal_search_evaluation.ipynb)
-notebook is used to evaluate the retrieval quality of the image search implemented in the above notebook.
-It uses [DeepEval](https://docs.confident-ai.com/) LLM evaluation framework and Gemini 1.5 Pro as LLM
-judge. It includes a set of test cases to evaluate different semantic search results across different
-retrieval metrics. This notebook requires completion of the [Multimodal Analysis and Search of Bus Stops](./notebooks/multimodal_analysis_search.ipynb) notebook.
+1. [CleanSight (Part 1): Multimodal Analysis and Search of Bus Stops](./notebooks/part_1_multimodal_analysis_search.ipynb)
+This notebook showcases the power of multimodal Gemini models and BigQuery vector search for a real-world image analysis use case. This notebook is
+self-sufficient and can be run independently without needing any other components of this repository. 
+2. [CleanSight (Part 2): Large-scale multimodal understanding](./notebooks/part_2_large_scale_understanding.ipynb) This notebook is the second part of the CleanSight example application. Whereas Part 1 represents an operational system that ingests and processes bus stop images as they arrive, this notebook focuses on the large-scale AI capabilities available once a large number of images has been collected. This notebook relies on the resources created in the previous (part 1) notebook.
+3. [CleanSight (Part 3): Predictions of bus stop related events](./notebooks/part_3_time_series_forecasting.ipynb) This notebook is the third part of the CleanSight example application. In this notebook, we'll explore how advanced time-series predictions can be combined with data produced using multimodal analysis. __Note__ This notebook requires access to the `WeatherNext` dataset. See the notebook for more details.`
 
 You can run the notebooks in a Vertex AI Workbench instance, in Google Colab Enterprise, or directly
 in BigQuery Studio. It is assumed that you have a Google Cloud project with permissions to create a Cloud
