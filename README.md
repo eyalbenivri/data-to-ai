@@ -56,6 +56,8 @@ buckets. This is done to be able to run the implementations independently of eac
 
 ## Getting Started with the Notebooks
 
+By using the provided notebooks, you will create the following solution ![Architecture Diagram](docs/notebook-architecture.png)
+
 The following notebooks are provided:
 
 1. [CleanSight (Part 1): Multimodal Analysis and Search of Bus Stops](./notebooks/part_1_multimodal_analysis_search.ipynb)
